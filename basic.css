@@ -1,0 +1,425 @@
+body {
+	margin: 0;
+}
+
+a {
+	color: inherit;
+}
+
+a:hover{
+	text-decoration: none;
+	color: inherit;
+}
+
+
+.row-centered {
+    text-align:center;
+}
+.col-centered {
+    display:inline-block;
+    float:none;
+}
+
+#obliterate{
+   display: none;
+}
+
+#filler{
+	position: fixed;
+	height: 1px;
+	width: 100%;
+	background-color: rgb(172,201,235);
+}
+
+#main{
+  background: url('mainbg.jpg') no-repeat center center; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-position: fixed;
+}
+
+#bottomcap {
+   position: fixed;
+   bottom: 0;
+   left: 0;
+   color: rgb(180,180,180);
+   font-size: 26px;
+   font-family: Raleway;
+   font-weight: 300; 
+   opacity: 0.4;
+   padding: 5px;
+}
+
+#bottomcap2 {
+   position: fixed;
+   bottom: 0;
+   right: 0;
+   color: rgb(180,180,180);
+   font-size: 26px;
+   font-family: Raleway;
+   font-weight: 300; 
+   opacity: 0.4;
+   padding: 5px;
+}
+
+#maincont{
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+}
+
+#centercont{
+   display: block;
+}
+
+
+#about{
+	text-align: left;
+	color: rgb(70,70,70);
+	font-family: Open Sans;
+	padding: 10px;
+  border-radius: 5px;
+  background-color: rgba(230,230,230,0.3);
+  box-shadow: 3px 3px 5px rgba(70,70,70,0.4);
+}
+
+#abouttitle{
+	font-family: Raleway;
+	font-weight: 700;
+	font-size: 50px;
+	color: rgb(70,70,70);
+	text-align: left;
+   margin-left: 10px
+}
+
+#contacticons2{
+  display: none;
+}
+
+#icon{
+   margin-bottom: 30px
+}
+
+#phone{
+  margin-left: 10px;
+}
+
+#port{
+	margin-top: 50px;
+}
+
+#porttext{
+	color: white;
+	font-family: Raleway;
+   font-weight: 200;
+	font-size: 42px;
+	margin-top: 10px;
+	margin-bottom: 0;
+}
+
+#icons{
+	margin-top: 15px;
+}
+
+#abouttitle img{
+   display: inline;
+   opacity: 1.0;
+}
+
+.ico{
+	display: inline;
+   margin-right: -12px;
+}
+
+.ico:hover{
+	opacity: 0.6;
+}
+
+#contact{
+	margin-top: 20px;
+	text-align: left;
+	margin-left: 10px;
+	color: rgb(180,180,180);
+	font-size: 24px;
+	opacity: 0.6;
+	text-shadow: 0px 3px 3px rgba(0, 0, 0, 1);
+}
+
+
+#contact img{
+	display: inline;
+	margin-right: 15px; 
+}
+
+#name:hover{
+	opacity: 0.6;
+}
+
+
+#projects{
+   position: fixed;
+   bottom: 0; 
+   width: 100%;
+   background-color: white;
+	display:none;
+}
+
+#projectspace{
+   margin-top: 20px;
+   width: 100%;
+   height: 360px;
+   display: none;
+}
+
+.proj{
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.carousel-indicators{
+   top: 360px;
+   border-color: black;
+}
+
+.carousel-indicators li {
+  background-color: white;
+  border-color: rgb(70,70,70);
+  border-width: 2px;
+}
+.carousel-indicators .active {
+  background-color: rgb(70,70,70);
+}
+
+.carousel-caption{
+  top: 40%;
+   color: black;
+}
+
+.carousel-caption h3{
+  font-family: Raleway;
+  font-weight: 300;
+}
+
+.carousel-caption p{
+  font-family: Raleway;
+}
+
+#csacap{
+  top: 45%;
+}
+
+#hongcap{
+  top: 48%;
+}
+
+.carousel-caption p{
+  text-align: left;
+}
+
+.carousel-control{
+  color: black;
+}
+
+#csaweb:hover{
+   opacity: 0.6;
+}
+
+.projresponsive{
+   margin-top: 15px;
+   display: none;
+}
+
+.resptext{
+   color: white;
+   text-align: left;
+   background-color: rgba(0,0,0,0.5);
+   border-radius: 20px;
+   padding: 15px;
+}
+
+#initbg{
+	position: absolute;
+	height: 100%;
+	width: 100%;
+	margin: 0;
+	  background: url('mainbg2.jpg') no-repeat center center; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-position: fixed;
+}
+
+.splash{
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+}
+
+/**
+#laptop{
+ position: fixed;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+
+#hands{
+	position: fixed;
+	bottom: 0px;
+	text-align: center;
+	width: 100%;
+}
+
+
+
+
+#hand{
+	width: auto;
+}
+*/
+
+
+#nb{
+	position: fixed;
+	margin-top: 10%;
+	text-align: center;
+	padding: 50px;
+	padding-top: 15px;
+	left: 50%;
+ 	 top: 50%;
+  transform: translate(-50%, -80%);
+  -webkit-transform: translate(-50%, -80%);
+  -moz-transform: translate(-50%, -80%);
+  -o-transform: translate(-50%, -80%);
+  -ms-transform: translate(-50%, -80%);
+}
+
+#welcome{
+	color: white;
+  font-size: 70px;
+  font-family: Raleway;
+  text-shadow: 0px 1px 5px rgba(0, 0, 0, 0.8);
+}
+
+#inst{
+  margin-top: 15px;
+  padding: 10px;
+  width: 300px;
+  margin-left: auto;
+  margin-right: auto;
+  font-family: Raleway;
+  color: white;
+  font-size: 14px;
+  border-style: solid;
+  border-radius: 15px;
+  border-width: 4px;
+  border-color: white;
+  background-color: rgba(70,70,70,0.3);
+    text-shadow: 0px 1px 3px rgba(0, 0, 0, 0.8);
+}
+
+#but2{
+	font-size: 40px;
+	font-family: Dosis;
+  color: white;
+	background-color: rgba(173,200,234,0.8);
+	width: 50%;
+  margin-top: 30px;
+	margin-left: auto;
+	margin-right: auto;
+		border-radius: 20px;
+}
+
+#cr{
+  margin-top: 15px;
+  padding: 10px;
+  width: 300px;
+  margin-left: auto;
+  margin-right: auto;
+  font-family: Raleway;
+  color: white;
+  font-size: 14px;
+}
+
+
+@media (max-width: 992px){
+
+
+}
+
+
+@media only screen and (max-device-width: 992px){
+
+      #maincont{
+        top: 0%;
+        transform: translateY(0%);
+          -webkit-transform: translateY(0%);
+  -moz-transform: translateY(0%);
+  -o-transform: translateY(0%);
+  -ms-transform: translateY(0%);
+
+      }
+
+      #startscr{
+            display: none;
+         }
+
+      #initbg{
+            display: none;
+         }
+      #obliterate{
+         display: block;
+      }
+
+      #portspace{
+        display: none;
+      }
+
+      #porttext{
+        color: rgb(70,70,70);
+      }
+
+      #contacticons1{
+        display: none;
+      }
+
+      #contacticons2{
+        display: block;
+      }
+
+      #projects{
+         display: none;
+      }
+      .projresponsive{
+         display: block;
+      }
+      #pagecont{
+         display: block;
+      }
+
+      #centercont{
+        background-color: rgba(255,255,255,0.4);
+      }
+
+      #bottomcap{
+         display: none;
+      }
+
+      #bottomcap2{
+        display: none;
+      }
+
+}
